@@ -12,20 +12,19 @@ let winningScore = 5;
 let isGameOver = false;
 
 winningScoreSelect.addEventListener('change', function(){
-    p1Score = 0;
-    p2Score = 0;
-    p1Display.textContent = '0';
-    p2Display.textContent = '0';
+    reset();
     winningScore = parseInt(this.value);
 });
 
-resetScore.addEventListener('click', function() {
+resetScore.addEventListener('click', reset);
+
+function reset() {
     p1Score = 0;
     p2Score = 0;
     p1Display.textContent = '0';
     p2Display.textContent = '0';
     isGameOver = false;
-});
+}
 
 p1btn.addEventListener('click', function() {
     if(!isGameOver) {
