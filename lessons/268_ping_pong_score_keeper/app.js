@@ -46,6 +46,8 @@ p2btn.addEventListener('click', function() {
         p2Display.textContent = p2Score;
     }
     if(p2Score === winningScore) {
+        p2Display.classList.add('winner');
+        p1Display.classList.add('loser');
         isGameOver = true;
     }
 } );
