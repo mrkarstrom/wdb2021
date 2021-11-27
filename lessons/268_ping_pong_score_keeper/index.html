@@ -16,15 +16,33 @@
         <div class="columns">
             <div class="column is-half is-offset-one-quarter">
                 <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by1"><img src="https://th.bing.com/th/id/OIP.rNMHBSw8ssVgGSqteaZGhQHaE6?pid=ImgDet&rs=1" alt="Ping pong game">
+                        </figure>
+                        
+                    </div>
                     <header class="card-header">
                       <p class="card-header-title">
                         Ping Pong Score Keeper
                       </p>
-                    </header>
+                    </header>            
                     <div class="card-content">
-                      <div class="content is-size-1">
-                        <h1 class="title is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
-                        <p class="subtitle">Use buttons below to keep score</p>
+                        <div class="content is-size-1">
+                            <h1 class="title is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                            <p class="subtitle">Use buttons below to keep score</p>
+                        </div>
+                    <label for="playto" class="label is-large is-inline">Playing to: </label>
+                    <div class="select is-rounded">
+                        <Select name="" id="playto">
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5" selected>5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </Select>
                     </div>
                     </div>
                     <footer class="card-footer">
@@ -38,24 +56,10 @@
         </div>
         
         <div id="frontImage">
-            <img src="https://th.bing.com/th/id/OIP.rNMHBSw8ssVgGSqteaZGhQHaE6?pid=ImgDet&rs=1" alt="Ping pong game">
-        </div>
-        
-        <div id="max">
-            Playing to:
-            
-            <Select name="" id="playto">
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5" selected>5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </Select>
            
         </div>
+        
+        
         
         
     </div>
