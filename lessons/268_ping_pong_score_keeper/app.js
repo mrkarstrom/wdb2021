@@ -1,8 +1,16 @@
-const p1btn = document.querySelector('#p1Button');
-const p2btn = document.querySelector('#p2Button');
+const p1 = {
+    score: 0,
+    button: document.querySelector('#p1Button'),
+    display: document.querySelector('#p1Display'),
+}
+
+const p2 = {
+    score: 0,
+    button: document.querySelector('#p2Button'),
+    display: document.querySelector('#p2Display'),
+}
+
 const resetScore = document.querySelector('#resetScore');
-const p1Display = document.querySelector('#p1Display');
-const p2Display = document.querySelector('#p2Display');
 const winningScoreSelect = document.querySelector('#playto')
 
 
