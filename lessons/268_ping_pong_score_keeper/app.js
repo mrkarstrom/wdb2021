@@ -24,8 +24,10 @@ function reset() {
     p1Display.textContent = '0';
     p2Display.textContent = '0';
     isGameOver = false;
-    p1Display.classList.remove('has-text-success','has-text-danger')
-    p2Display.classList.remove('has-text-success','has-text-danger')
+    p1Display.classList.remove('has-text-success','has-text-danger');
+    p2Display.classList.remove('has-text-success','has-text-danger');
+    p1btn.disabled = false;
+    p2btn.disabled = false;
 }
 
 p1btn.addEventListener('click', function() {
@@ -37,6 +39,8 @@ p1btn.addEventListener('click', function() {
         p1Display.classList.add('has-text-success');
         p2Display.classList.add('has-text-danger');
         isGameOver = true;
+        p1btn.disabled = true;
+        p2btn.disabled = true;
     }
 } );
 
@@ -49,6 +53,8 @@ p2btn.addEventListener('click', function() {
         p2Display.classList.add('has-text-success');
         p1Display.classList.add('has-text-danger');
         isGameOver = true;
+        p1btn.disabled = true;
+        p2btn.disabled = true;
     }
 } );
 
